@@ -1,3 +1,419 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	max-width: 1140px;
+	margin: auto;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.top-container {
+	display: flex;
+	margin-top: 25px;
+	align-items: center;
+	justify-content: center;
+    margin-bottom: 50px;
+    margin-bottom: 0;
+}
+
+nav {
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+    padding: 5% 0;
+    padding-right: 5%;
+}
+
+nav a {
+	text-decoration: none;
+	color: darkgray;
+}
+
+.middle-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    margin: 50px;
+    text-align: right;
+    margin-top: 0;
+}
+
+.middle-container h1 {
+	font-size: 90px;
+	text-align: center;
+}
+
+.middle-container button {
+	border: 1px solid black;
+	background-color: white;
+	color: black;
+	padding: 5px 25px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.content-top {
+	display: flex;
+	justify-content: space-around;
+}
+
+.content-top div {
+    padding: 5% 0;
+    width: 48%;
+}
+
+.content-img {
+	text-align: center;
+}
+
+.content-img img {
+	width: 100%;
+}
+
+.content-bottom {
+	display: flex;
+	justify-content: space-around;
+}
+
+.content-bottom div {
+    padding: 5% 0;
+    width: 31%;
+}
+
+footer {
+	padding: 15px 0;
+}
+
+footer p {
+	margin: 0;
+}
+
+.copyright {
+	text-align: center;
+	margin: 50px 0;
+}
+
+.text-top {
+	margin: 25px 0;
+}
+
+.text-top h2 {
+	font-size: 24px;
+}
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.services div {
+	border: 1px solid black;
+	background-color: rgb(228, 225, 225);
+	padding: 15px;
+	margin: 2%;
+	width: 46%;
+} 
+
+.services button {
+	font-size: 12px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 5px 30px;
+	margin-top: 20px;
+}
+
+.bottom-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.bottom-container div {
+	width: 46%;
+	margin: 2%;
+}
+
+.heading-image {
+	width: 100%;
+	margin-left: 10%;
+}
+
+.bottom-container ul {
+	list-style-type: square;
+	margin-left: 20px;
+}
+
+.logo {
+	width: 183px;
+	height: 36px;
+	background-image: url("../img/logo.png");
+}
+
+/* Products Page */
+.products-img {
+	text-align: center;
+}
+
+.products-img img {
+	width: 100%;;
+}
+
+.about-products {
+	margin: 25px 0;
+	text-align: center;
+}
+
+.about-products h2 {
+	font-size: 24px;
+}
+
+.about-products p {
+	padding-bottom: 25px;
+	border-bottom: 1px solid black;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 5%;
+	padding-bottom: 5%;
+	border-bottom: 1px solid black;
+	text-align: center;
+}
+
+.products div {
+	padding: 2%;
+	width: 46%;
+}
+
+.products img {
+	width: 100%;
+}
+
+.products button {
+	border: 1px solid black;
+	background-color: white;
+	color: black;
+	padding: 5px 25px;
+}
+
+.products h2 {
+	text-align: center;
+}
+
+.products p {
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+/* NAV */
+@media only screen and (max-width: 800px) {
+    
+    body {
+		padding-left: 30px;
+        padding-right: 30px;
+	}
+
+    .top-container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        text-align: center;
+	}
 
 
+	.navigation a {
+        padding: 2% 0;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+
+
+    .logo {
+        width: 150px;
+      }
+	
+
+    /* Middle Container */
+
+    .middle-container {
+		display: block;
+		text-align: center;
+	}
+
+	.content-top p, h2 {
+        text-align: left;
+    }
+    
+    .content-top div {
+        padding: 5% 0;
+        width: 48%;
+    }
+
+	.middle-container .heading-image {
+		margin-top: 25px;
+		margin-left: -1%;
+	}
+
+	.navigation a {
+		padding: 10px;
+	}
+	
+	.content-top {
+        display: flex;
+        width: 100%;
+	}
+
+	.content-bottom {
+        display: flex;
+        justify-content: space-between;
+		width: 100%;
+		text-align: center;
+	}
+
+    .content-bottom div {
+        padding: 5% 0;
+        width: 30%;
+    }
+
+	.content-bottom p, h2 {
+        text-align: left;
+	}
+
+
+	/* Product Page */
+
+	.bottom-container {
+		flex-direction: column;
+	}
+
+	div .footer-title {
+		margin-left: 10%;
+	}
+	
+	.heading-image {
+		display: none;
+    }
+}
+    @media only screen and (max-width: 500px) {
+    
+    .top-container {
+        flex-direction: column-reverse;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        border-bottom: 1px solid black;
+    }
+
+    body {
+		padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    hr {
+        width: 95%;
+    }
+
+    .content-top {
+        display: block;
+    }
+
+    .content-top div {
+        width: 100%;
+        padding: 3%
+    }
+
+    .content-img img {
+        width: 95%;
+    }
+
+    .content-bottom {
+        display: block;
+    }
+
+    .content-bottom div {
+        width: 100%;
+        padding: 3%;
+    }
+
+    footer {
+        padding: 3%;
+    }
+
+    }
