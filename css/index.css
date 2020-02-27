@@ -145,7 +145,8 @@ nav a {
 }
 
 footer {
-	padding: 15px 0;
+    padding: 15px 0;
+    padding-left: 1%;
 }
 
 footer p {
@@ -158,7 +159,8 @@ footer p {
 }
 
 .text-top {
-	margin: 25px 0;
+    margin: 25px 0;
+    padding-left: 2%;
 }
 
 .text-top h2 {
@@ -194,7 +196,6 @@ footer p {
 }
 
 .bottom-container div {
-	width: 46%;
 	margin: 2%;
 }
 
@@ -349,19 +350,18 @@ footer p {
         text-align: left;
 	}
 
+    .bottom-container {
+        display: flex;
+        justify-content: flex-start;
+    }
 
 	/* Product Page */
-
-	.bottom-container {
-		flex-direction: column;
-	}
-
-	div .footer-title {
-		margin-left: 10%;
-	}
 	
 	.heading-image {
 		display: none;
+    }
+    footer {
+        padding-left: 0;
     }
 }
     @media only screen and (max-width: 500px) {
@@ -393,7 +393,7 @@ footer p {
     .content-top {
         display: block;
     }
-
+    
     .content-top div {
         width: 100%;
         padding: 3%
